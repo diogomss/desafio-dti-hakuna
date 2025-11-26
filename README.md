@@ -48,39 +48,47 @@ Cadastra um novo pedido na fila de espera.
 
 Body de Exemplo (JSON):
 
-JSON
+(JSON)
 
-{ "x": 10, "y": 20, "peso": 5, "prioridade": "alta" }
+   { "x": 10, "y": 20, "peso": 5, "prioridade": "alta" }
+
+---
 
 Exemplo de Comando cURL (Linux/Mac/Git Bash):
 
-Bash
+(Bash)
 
-curl -X POST http://localhost:3000/pedidos -H "Content-Type: application/json" -d '{"x": 10, "y": 20, "peso": 5, "prioridade": "alta"}'
+   curl -X POST http://localhost:3000/pedidos -H "Content-Type: application/json" -d '{"x": 10, "y": 20, "peso": 5, "prioridade": "alta"}'
+
+---
 
 Exemplo de Comando PowerShell (Windows):
 
-PowerShell
+(PowerShell)
 
-Invoke-RestMethod -Uri http://localhost:3000/pedidos -Method Post -ContentType "application/json" -Body '{"x": 10, "y": 20, "peso": 5, "prioridade": "alta"}'
+   Invoke-RestMethod -Uri http://localhost:3000/pedidos -Method Post -ContentType "application/json" -Body '{"x": 10, "y": 20, "peso": 5,     "prioridade": "alta"}'
+
+---
 
 2. Processar Entregas (POST /entregas/processar)
 Este endpoint executa o algoritmo de otimização. Ele tenta alocar o máximo de pedidos possíveis nos drones disponíveis, minimizando as viagens.
 
 Exemplo de Comando cURL:
 
-Bash
+(Bash)
 
-curl -X POST http://localhost:3000/entregas/processar
+   curl -X POST http://localhost:3000/entregas/processar
+
+---
 
 3. Status dos Drones (GET /drones/status)
 Verifica o estado atual dos drones (ex: IDLE, EM_VOO) e suas capacidades.
 
 Exemplo de Comando cURL:
 
-Bash
+(Bash)
 
-curl http://localhost:3000/drones/status
+   curl http://localhost:3000/drones/status
 
 ---
 
