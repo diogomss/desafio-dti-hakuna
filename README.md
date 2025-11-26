@@ -74,7 +74,7 @@ Exemplo de Comando PowerShell (Windows):
 
 (PowerShell)
 ```
-   Invoke-RestMethod -Uri http://localhost:3000/pedidos -Method Post -ContentType "application/json" -Body '{"x": 10, "y": 20, "peso": 5,     "prioridade": "alta"}'
+   Invoke-RestMethod -Uri http://localhost:3000/pedidos -Method Post -ContentType "application/json" -Body '{"x": 10, "y": 20, "peso": 5, "prioridade": "alta"}'
 ```
 ---
 
