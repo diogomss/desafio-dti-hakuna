@@ -2,7 +2,7 @@
 
 Este projeto é uma API RESTful desenvolvida em **Node.js** para gerenciar e otimizar a logística de entregas por drones, focando na **minimização do número de viagens**.
 
-⚙️ Regras de Negócio Implementadas
+##⚙️ Regras de Negócio Implementadas
 Algoritmo de Otimização: Utiliza uma estratégia "Greedy" que prioriza pedidos por Prioridade (Alta > Média > Baixa) e, em seguida, por Peso (Maior para o Menor), para otimizar o espaço e minimizar o número total de viagens.
 
 Validação de Capacidade: Checa se o peso do pacote e a distância total da rota (ida e volta) estão dentro da capacidade e alcance do drone.
