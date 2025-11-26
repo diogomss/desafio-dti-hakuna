@@ -21,6 +21,14 @@ A estrutura inicial, a arquitetura da API e os modelos de testes unitários fora
 
 ---
 
+## ✅ Testes Automatizados
+
+Para executar os testes unitários que validam a lógica de negócio (capacidade e priorização):
+```bash
+npm test
+
+---
+
 ## 🚀 Como Executar
 
 1.  **Clone o repositório.**
@@ -89,11 +97,3 @@ Exemplo de Comando cURL:
 (Bash)
 
    curl http://localhost:3000/drones/status
-
----
-
-## ✅ Testes Automatizados
-
-Para executar os testes unitários que validam a lógica de negócio (capacidade e priorização):
-```bash
-npm test
